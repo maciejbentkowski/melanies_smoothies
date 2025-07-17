@@ -7,6 +7,8 @@ smoothiefroot_response = requests.get("https://fruityvice.com//api/fruit/waterme
 
 st.write(smoothiefroot_response.json())
 
+sf_df = st.dataframe(data=smothiefrooot_response.json(), use_container_width = True)
+
 # Write directly to the app
 st.title(f":cup_with_straw: Customize Your Smoothie! :cup_with_straw:")
 st.write(
